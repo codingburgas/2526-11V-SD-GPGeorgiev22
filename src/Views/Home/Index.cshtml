@@ -1,0 +1,12 @@
+﻿@{
+    ViewData["Title"] = "Home";
+}
+
+<section class="hero-section p-4 p-md-5 rounded-3">
+    <h1 class="display-6 fw-bold">Warehouse Management School</h1>
+    <p class="lead mb-4">Learn warehouse operations, data modeling, and interface basics through structured lessons.</p>
+    <div class="d-flex gap-2">
+        <a asp-controller="Lessons" asp-action="Index" class="btn btn-primary">Browse Lessons</a>
+        <a asp-controller="Categories" asp-action="Index" class="btn btn-outline-primary">Explore Categories</a>
+    </div>
+</section>
