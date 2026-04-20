@@ -1,0 +1,15 @@
+﻿@model IReadOnlyList<WarehouseManagementSchool.Models.Category>
+@{
+    ViewData["Title"] = "Categories";
+}
+
+<h2>Categories</h2>
+<ul class="list-group">
+@foreach (var category in Model)
+{
+    <li class="list-group-item d-flex justify-content-between align-items-center">
+        <span>@category.Name</span>
+        <a asp-controller="Categories" asp-action="Details" asp-route-id="@category.Id" class="btn btn-outline-primary btn-sm">View Lessons</a>
+    </li>
+}
+</ul>
