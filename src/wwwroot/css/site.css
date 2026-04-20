@@ -1,0 +1,18 @@
+﻿body {
+    min-height: 100vh;
+    background: linear-gradient(160deg, #f4f8ff 0%, #eef7f1 50%, #ffffff 100%);
+}
+
+.hero-section {
+    background-color: #ffffff;
+    border: 1px solid #d6e0ff;
+    box-shadow: 0 0.5rem 1rem rgba(27, 75, 171, 0.08);
+}
+
+.lesson-details .card {
+    border: 1px solid #dce4f8;
+}
+
+.footer {
+    background-color: #ffffff;
+}
