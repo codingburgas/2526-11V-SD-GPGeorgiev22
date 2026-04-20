@@ -1,1 +1,19 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/U2LjJyKI)
+﻿# WarehouseManagementSchool
+
+WarehouseManagementSchool is an ASP.NET Core MVC educational web application focused on warehouse learning content.
+
+## Day 1 Scope
+- Learning module with lessons and categories
+- Seeded relational database with EF Core (SQLite)
+- Optional authentication (register/login/logout)
+- Navigation with Home, Lessons, Test placeholder
+- Clean layered architecture inside `src`
+
+## Project Structure
+All functional files are located under `src`.
+
+## Run
+1. Install .NET 8 SDK
+2. From `src` execute:
+   - `dotnet restore`
+   - `dotnet run`
