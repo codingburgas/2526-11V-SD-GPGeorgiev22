@@ -1,0 +1,22 @@
+﻿@model IReadOnlyList<WarehouseManagementSchool.ViewModels.LessonListItemViewModel>
+@{
+    ViewData["Title"] = "Lessons";
+}
+
+<h2>Lessons</h2>
+<p class="text-secondary">Available Day 1 learning content for warehouse management fundamentals.</p>
+
+<div class="row g-3">
+    @foreach (var lesson in Model)
+    {
+        <div class="col-12 col-md-6">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                    <h5 class="card-title">@lesson.Title</h5>
+                    <p class="card-text"><span class="badge bg-secondary">@lesson.CategoryName</span></p>
+                    <a asp-controller="Lessons" asp-action="Details" asp-route-id="@lesson.Id" class="btn btn-outline-primary btn-sm">Read Lesson</a>
+                </div>
+            </div>
+        </div>
+    }
+</div>
