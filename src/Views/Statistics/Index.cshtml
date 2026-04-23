@@ -1,0 +1,62 @@
+@model WarehouseManagementSchool.ViewModels.StatisticsViewModel
+@{
+    ViewData["Title"] = "Statistics";
+}
+
+<h2 class="mb-4">Test Statistics</h2>
+
+<div class="row g-3 mb-4">
+    <div class="col-md-3">
+        <div class="border rounded p-3 h-100 bg-light">
+            <div class="text-muted small">Total tests</div>
+            <div class="fs-4 fw-bold">@Model.TotalTestsTaken</div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="border rounded p-3 h-100 bg-light">
+            <div class="text-muted small">Highest score</div>
+            <div class="fs-4 fw-bold">@Model.HighestScore.ToString("F2")</div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="border rounded p-3 h-100 bg-light">
+            <div class="text-muted small">Lowest score</div>
+            <div class="fs-4 fw-bold">@Model.LowestScore.ToString("F2")</div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="border rounded p-3 h-100 bg-light">
+            <div class="text-muted small">Average score</div>
+            <div class="fs-4 fw-bold">@Model.AverageScore.ToString("F2")</div>
+        </div>
+    </div>
+</div>
+
+<div class="card shadow-sm">
+    <div class="card-body">
+        <h5 class="card-title mb-3">Success Rate by Category</h5>
+        <div class="table-responsive">
+            <table class="table table-striped align-middle mb-0">
+                <thead>
+                    <tr>
+                        <th scope="col">Category</th>
+                        <th scope="col">Correct Answers</th>
+                        <th scope="col">Total Answers</th>
+                        <th scope="col">Success Rate</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var row in Model.CategorySuccessRates)
+                    {
+                        <tr>
+                            <td>@row.CategoryName</td>
+                            <td>@row.CorrectAnswers</td>
+                            <td>@row.TotalAnswers</td>
+                            <td>@row.SuccessRate.ToString("F2")%</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
