@@ -1,4 +1,4 @@
-﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations;
 
 namespace WarehouseManagementSchool.Models;
 
@@ -11,4 +11,5 @@ public sealed class Category
     public string Name { get; set; } = string.Empty;
 
     public ICollection<Lesson> Lessons { get; set; } = new List<Lesson>();
+    public ICollection<Question> Questions { get; set; } = new List<Question>();
 }
