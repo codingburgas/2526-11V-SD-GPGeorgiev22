@@ -116,7 +116,18 @@ public sealed class TestController : Controller
             AnsweredQuestions = result.AnsweredQuestions,
             DateTaken = result.DateTaken
         };
+        (model.FeedbackMessage, model.FeedbackClass) = BuildFeedback(model.Grade);
 
         return View(model);
+    }
+
+    private static (string Message, string CssClass) BuildFeedback(int grade)
+    {
+        return grade switch
+        {
+            >= 6 => ("Excellent performance. You mastered this test.", "success"),
+            >= 4 => ("Good work. You have a strong understanding.", "primary"),
+            _ => ("Needs Improvement. Review lessons and try again.", "warning")
+        };
     }
 }

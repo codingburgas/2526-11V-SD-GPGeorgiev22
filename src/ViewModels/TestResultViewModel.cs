@@ -9,4 +9,6 @@ public sealed class TestResultViewModel
     public double Percentage { get; set; }
     public int AnsweredQuestions { get; set; }
     public DateTime DateTaken { get; set; }
+    public string FeedbackMessage { get; set; } = string.Empty;
+    public string FeedbackClass { get; set; } = "secondary";
 }

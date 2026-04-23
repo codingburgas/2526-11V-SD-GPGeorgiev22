@@ -1,13 +1,40 @@
-﻿@{
+@{
     ViewData["Title"] = "Home";
 }
 
-<section class="hero-section p-4 p-md-5 rounded-3">
-    <h1 class="display-6 fw-bold">Warehouse Management School</h1>
-    <p class="lead mb-4">Learn warehouse operations, data modeling, and interface basics through structured lessons.</p>
-    <div class="d-flex gap-2">
-        <a asp-controller="Lessons" asp-action="Index" class="btn btn-primary">Browse Lessons</a>
-        <a asp-controller="Test" asp-action="Start" class="btn btn-success">Start Test</a>
+<section class="hero-section p-4 p-md-5 rounded-3 mb-4">
+    <h1 class="display-6 fw-bold">Warehouse Management e-Learning System</h1>
+    <p class="lead mb-4">Build practical knowledge in inventory operations, database design, and UI quality through structured lessons and assessments.</p>
+    <div class="d-flex gap-2 flex-wrap">
+        <a asp-controller="Lessons" asp-action="Index" class="btn btn-primary">Start Learning</a>
+        <a asp-controller="Test" asp-action="Start" class="btn btn-success">Take Test</a>
         <a asp-controller="Statistics" asp-action="Index" class="btn btn-outline-primary">View Statistics</a>
+    </div>
+</section>
+
+<section class="row g-3">
+    <div class="col-12 col-md-4">
+        <div class="card h-100 shadow-sm">
+            <div class="card-body">
+                <h5 class="card-title">Lesson Module</h5>
+                <p class="card-text text-secondary mb-0">Explore curated lessons with category-based organization and clear learning paths.</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-12 col-md-4">
+        <div class="card h-100 shadow-sm">
+            <div class="card-body">
+                <h5 class="card-title">Test Module</h5>
+                <p class="card-text text-secondary mb-0">Generate randomized tests with mixed difficulty and immediate grading feedback.</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-12 col-md-4">
+        <div class="card h-100 shadow-sm">
+            <div class="card-body">
+                <h5 class="card-title">Statistics Module</h5>
+                <p class="card-text text-secondary mb-0">Track progress using score summaries and category-level success rates.</p>
+            </div>
+        </div>
     </div>
 </section>

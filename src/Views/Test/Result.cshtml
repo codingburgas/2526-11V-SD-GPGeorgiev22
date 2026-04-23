@@ -7,27 +7,31 @@
     <div class="card-body">
         <h2 class="card-title mb-3">Test Result</h2>
 
+        <div class="alert alert-@Model.FeedbackClass" role="alert">
+            <strong>Feedback:</strong> @Model.FeedbackMessage
+        </div>
+
         <div class="row g-3 mb-4">
             <div class="col-md-3">
-                <div class="border rounded p-3 h-100">
+                <div class="border rounded p-3 h-100 metric-card">
                     <div class="text-muted small">Score</div>
                     <div class="fs-3 fw-bold">@Model.Score / @Model.MaximumScore</div>
                 </div>
             </div>
             <div class="col-md-3">
-                <div class="border rounded p-3 h-100">
+                <div class="border rounded p-3 h-100 metric-card">
                     <div class="text-muted small">Percentage</div>
                     <div class="fs-3 fw-bold">@Model.Percentage.ToString("F2")%</div>
                 </div>
             </div>
             <div class="col-md-3">
-                <div class="border rounded p-3 h-100">
+                <div class="border rounded p-3 h-100 metric-card">
                     <div class="text-muted small">Grade</div>
                     <div class="fs-3 fw-bold">@Model.Grade</div>
                 </div>
             </div>
             <div class="col-md-3">
-                <div class="border rounded p-3 h-100">
+                <div class="border rounded p-3 h-100 metric-card">
                     <div class="text-muted small">Answered Questions</div>
                     <div class="fs-3 fw-bold">@Model.AnsweredQuestions</div>
                 </div>
@@ -36,7 +40,7 @@
 
         <p class="text-muted mb-4">Taken on: @Model.DateTaken.ToLocalTime().ToString("yyyy-MM-dd HH:mm")</p>
 
-        <div class="d-flex gap-2">
+        <div class="d-flex gap-2 flex-wrap">
             <a asp-action="Start" class="btn btn-primary">Take Another Test</a>
             <a asp-controller="Statistics" asp-action="Index" class="btn btn-outline-secondary">View Statistics</a>
         </div>

@@ -23,7 +23,10 @@ public sealed class LessonsController : Controller
             {
                 Id = lesson.Id,
                 Title = lesson.Title,
-                CategoryName = lesson.CategoryNavigation?.Name ?? lesson.Category
+                CategoryName = lesson.CategoryNavigation?.Name ?? lesson.Category,
+                Summary = lesson.Content.Length > 140
+                    ? $"{lesson.Content[..140]}..."
+                    : lesson.Content
             })
             .ToList();
 

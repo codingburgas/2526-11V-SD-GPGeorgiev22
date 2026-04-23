@@ -1,15 +1,19 @@
-﻿@model WarehouseManagementSchool.ViewModels.LessonDetailsViewModel
+@model WarehouseManagementSchool.ViewModels.LessonDetailsViewModel
 @{
     ViewData["Title"] = "Lesson Details";
 }
 
 <article class="lesson-details">
-    <h2>@Model.Title</h2>
-    <p><span class="badge bg-secondary">@Model.CategoryName</span></p>
+    <div class="mb-3">
+        <h2 class="mb-2">@Model.Title</h2>
+        <span class="badge text-bg-secondary">@Model.CategoryName</span>
+    </div>
+
     <div class="card shadow-sm">
         <div class="card-body">
-            <p class="card-text">@Model.Content</p>
+            <p class="card-text mb-0">@Model.Content</p>
         </div>
     </div>
-    <a asp-controller="Lessons" asp-action="Index" class="btn btn-link mt-3">Back to Lessons</a>
+
+    <a asp-controller="Lessons" asp-action="Index" class="btn btn-link mt-3 px-0">Back to Lessons</a>
 </article>
