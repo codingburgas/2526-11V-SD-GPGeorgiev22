@@ -1,20 +1,20 @@
-# ?? Warehouse Management e-Learning System
+# Warehouse Management e-Learning System
 
-## ?? Overview
+## Overview
 
-Warehouse Management e-Learning System is a web-based educational platform built with **ASP.NET Core MVC**.
-It functions as an electronic school focused on **warehouse management and logistics**.
+Warehouse Management e-Learning System is a web-based educational platform built with ASP.NET Core MVC.
+It functions as an electronic school focused on warehouse management and logistics.
 
 The system provides:
 
-- ?? Learning materials (lessons)
-- ?? Automated test system
-- ?? Performance evaluation
-- ?? Statistics and analytics
+- Learning materials (lessons)
+- Automated test system
+- Performance evaluation
+- Statistics and analytics
 
 ---
 
-## ?? Project Goals
+## Project Goals
 
 - Teach core concepts of warehouse management
 - Provide structured educational content
@@ -23,7 +23,7 @@ The system provides:
 
 ---
 
-## ??? Technologies
+## Technologies
 
 - ASP.NET Core MVC
 - C#
@@ -33,19 +33,19 @@ The system provides:
 
 ---
 
-## ?? Architecture
+## Architecture
 
 The project follows a layered architecture:
 
-- **Controllers** - Handle HTTP requests
-- **Services** - Business logic
-- **Models** - Data layer
-- **Views** - UI layer
-- **Interfaces** - Contracts for dependency inversion
+- Controllers: Handle HTTP requests
+- Services: Business logic
+- Models: Data layer
+- Views: UI layer
+- Interfaces: Contracts for dependency inversion
 
 ---
 
-## ?? Project Structure
+## Project Structure
 
 ```bash
 /src
@@ -70,9 +70,9 @@ The project follows a layered architecture:
 
 ---
 
-## ?? Features
+## Features
 
-### ?? Learning Module
+### Learning Module
 
 - Lessons grouped by categories
 - Detailed lesson pages
@@ -80,7 +80,7 @@ The project follows a layered architecture:
 
 ---
 
-### ?? Test System
+### Test System
 
 - 30+ questions stored in database
 - 3 categories:
@@ -96,7 +96,7 @@ The project follows a layered architecture:
 
 ---
 
-### ?? Grading System
+### Grading System
 
 Uses the Bulgarian 6-point scale:
 
@@ -117,7 +117,7 @@ Displayed after submission:
 
 ---
 
-### ?? Statistics
+### Statistics
 
 - Highest score
 - Lowest score
@@ -127,7 +127,7 @@ Displayed after submission:
 
 ---
 
-## ?? Mathematical Model
+## Mathematical Model
 
 The number of possible test combinations is:
 
@@ -137,7 +137,7 @@ This represents the number of possible unique test combinations.
 
 ---
 
-## ?? How to Run
+## How to Run
 
 1. Clone the repository:
 
@@ -166,12 +166,12 @@ dotnet run
 
 5. Open in browser:
 
-- `https://localhost:7168`
-- or `http://localhost:5168`
+- https://localhost:7168
+- or http://localhost:5168
 
 ---
 
-## ?? Validation & Security
+## Validation and Security
 
 - Input validation using Data Annotations
 - Anti-forgery protection on form posts
@@ -180,7 +180,7 @@ dotnet run
 
 ---
 
-## ?? Evaluation Criteria Coverage
+## Evaluation Criteria Coverage
 
 - Code quality (OOP, structure, naming)
 - Functional UI and navigation
@@ -190,7 +190,7 @@ dotnet run
 
 ---
 
-## ?? Future Improvements
+## Future Improvements
 
 - Role-based authentication and authorization
 - Admin panel for managing questions and lessons
@@ -199,14 +199,14 @@ dotnet run
 
 ---
 
-## ????? Author
+## Author
 
 Student project for ASP.NET Core course.
 
-Topic: **Warehouse Management e-Learning System**
+Topic: Warehouse Management e-Learning System
 
 ---
 
-## ?? Final Result
+## Final Result
 
 A fully functional educational web application ready for demonstration and evaluation.
