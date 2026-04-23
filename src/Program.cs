@@ -27,6 +27,9 @@ builder.Services.AddScoped<ILessonService, LessonService>();
 builder.Services.AddScoped<ICategoryService, CategoryService>();
 builder.Services.AddScoped<IUserService, UserService>();
 builder.Services.AddScoped<IPasswordHasherService, PasswordHasherService>();
+builder.Services.AddScoped<IGradingService, GradingService>();
+builder.Services.AddScoped<ITestService, TestService>();
+builder.Services.AddScoped<IStatisticsService, StatisticsService>();
 
 var app = builder.Build();
 
